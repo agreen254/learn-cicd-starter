@@ -38,7 +38,7 @@ func TestMalformedAuthHeader(t *testing.T) {
 
 func TestValidAuthHeader(t *testing.T) {
 	var header = make(http.Header)
-	header.Set("authorization", "ApiKey")
+	header.Set("authorization", "ApiKey himom12345")
 
 	got, err := GetAPIKey(header)
 	if err != nil {
